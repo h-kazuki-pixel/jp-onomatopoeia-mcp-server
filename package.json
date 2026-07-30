@@ -1,0 +1,45 @@
+{
+  "name": "jp-onomatopoeia-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server that makes Claude fluent in Japanese onomatopoeia (giongo / gitaigo). Search by scene, get nuance explained in Japanese and English. Fully offline, no API key required.",
+  "type": "module",
+  "bin": {
+    "jp-onomatopoeia-mcp-server": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "japanese",
+    "onomatopoeia",
+    "giongo",
+    "gitaigo",
+    "nihongo",
+    "language-learning",
+    "offline"
+  ],
+  "author": "Kazu (@h-kazuki-pixel)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
