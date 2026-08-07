@@ -1,5 +1,7 @@
 # jp-onomatopoeia-mcp-server
 
+[![CI](https://github.com/h-kazuki-pixel/jp-onomatopoeia-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/h-kazuki-pixel/jp-onomatopoeia-mcp-server/actions/workflows/ci.yml)
+
 日本語のオノマトペ(擬音語・擬態語)を **場面から引ける** MCPサーバーです。
 「雨が静かに降る様子」と伝えるだけで「しとしと」が返り、意味・例文・使い分けのニュアンスまで日本語と英語で説明します。
 
